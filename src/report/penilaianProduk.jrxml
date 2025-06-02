@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="863f9c63-ecd0-47b4-a30e-35163dd84d65">
+	<property name="ireport.zoom" value="1.610510000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_dataproduk.`idProduk` AS tb_dataproduk_idProduk,
+     tb_dataproduk.`namaProduk` AS tb_dataproduk_namaProduk,
+     tb_dataproduk.`kualitas` AS tb_dataproduk_kualitas,
+     tb_dataproduk.`penjualan` AS tb_dataproduk_penjualan,
+     tb_dataproduk.`stok` AS tb_dataproduk_stok,
+     tb_dataproduk.`rating` AS tb_dataproduk_rating
+FROM
+     `tb_dataproduk` tb_dataproduk]]>
+	</queryString>
+	<field name="tb_dataproduk_idProduk" class="java.lang.Integer"/>
+	<field name="tb_dataproduk_namaProduk" class="java.lang.String"/>
+	<field name="tb_dataproduk_kualitas" class="java.lang.Double"/>
+	<field name="tb_dataproduk_penjualan" class="java.lang.Double"/>
+	<field name="tb_dataproduk_stok" class="java.lang.Double"/>
+	<field name="tb_dataproduk_rating" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="159" splitType="Stretch">
+			<image>
+				<reportElement x="31" y="16" width="69" height="74" uuid="8867f88f-085f-467d-bab9-9119970eed2f"/>
+				<imageExpression><![CDATA["C:\\Users\\richard\\Documents\\NetBeansProjects\\TA(second)\\src\\img\\tujulangit logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="132" y="16" width="318" height="46" uuid="625733d7-175d-4f6d-bac2-f5c2fe052674"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TUJULANGIT FORESTPARK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="46" width="318" height="39" uuid="b7691735-b4b7-4f93-8b5b-88806c4ee4b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Jl. Wisata Utama Jl. Kota Wisata No.8 Blok C1, Nagrak, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16968]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="114" width="180" height="20" uuid="6c8aa0c6-0b14-4a3d-a89b-5e25125bdae7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENILAIAN PRODUK]]></text>
+			</staticText>
+			<line>
+				<reportElement x="15" y="99" width="528" height="1" uuid="f3ac10f4-d962-4a61-8169-d7accc0b009e"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="43" height="20" uuid="9c83db95-a4a8-4f57-803d-3ba7e3f8faac"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="0" width="252" height="20" uuid="bb78134d-aa0a-40ee-9cd2-f982e0e249d0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="0" width="65" height="20" uuid="41d30c72-4800-44e0-bf8a-fcdc0dfc33ff"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kualitas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="65" height="20" uuid="a166dbe1-5d9c-4fae-b6af-8e0d4a5630e7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penjualan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="0" width="65" height="20" uuid="18c9d63b-4034-4d5d-98fc-6ecac9a428e2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="0" width="65" height="20" uuid="2e156d0a-0293-4b8d-8737-8b5641d49058"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rating]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="43" height="20" uuid="190e9407-1faf-4da9-8fd0-5b4c495bd3c2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_idProduk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="43" y="0" width="252" height="20" uuid="71ee1f4a-414e-40ff-93f9-5c3640c39e04"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_namaProduk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="0" width="65" height="20" uuid="830e0323-5879-483b-9862-e7a9fb2a6cb3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_kualitas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="65" height="20" uuid="148ef10c-35bf-492e-bf61-05c007ac1572"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_penjualan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="0" width="65" height="20" uuid="df9377f8-44eb-46ba-b892-cf0b9f8f45be"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="65" height="20" uuid="f8720af3-794e-42a7-b34d-91b221b1acf2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_rating}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="263" splitType="Stretch">
+			<staticText>
+				<reportElement x="385" y="44" width="40" height="20" uuid="0db21bb8-b5b7-475a-a545-157575a2c548"/>
+				<text><![CDATA[Cibubur,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="142" width="147" height="20" uuid="f9fe5926-1930-4e8e-8083-c3b7df266d54"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dian Astriana Yuniarty, S.E.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="59" width="151" height="20" uuid="aed27998-c21a-4979-bea1-506dcb4cb4ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pimpinan Perusahaan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="214" y="238" width="100" height="20" uuid="869be277-289a-4638-b32e-a07effbc3ba5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="425" y="44" width="143" height="20" uuid="bd013b52-893c-4c99-9778-66c853ae657d"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMM yyyy", new java.util.Locale("id", "ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

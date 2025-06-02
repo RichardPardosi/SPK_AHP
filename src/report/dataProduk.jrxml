@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4cbe1db9-9d34-4f67-9c1c-c424b1ae80f3">
+	<property name="ireport.zoom" value="1.7715610000000015"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="32"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_dataproduk.`idProduk` AS tb_dataproduk_idProduk,
+     tb_dataproduk.`namaProduk` AS tb_dataproduk_namaProduk
+FROM
+     `tb_dataproduk` tb_dataproduk]]>
+	</queryString>
+	<field name="tb_dataproduk_idProduk" class="java.lang.Integer"/>
+	<field name="tb_dataproduk_namaProduk" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="145" splitType="Stretch">
+			<image>
+				<reportElement x="32" y="12" width="69" height="74" uuid="b7e6314d-e157-4518-aaa6-9cf6975b23d0"/>
+				<imageExpression><![CDATA["C:\\Users\\richard\\Documents\\NetBeansProjects\\TA(second)\\src\\img\\tujulangit logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="133" y="12" width="318" height="46" uuid="7db763e2-b8bf-45b3-80d1-d95a06ca7ebf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TUJULANGIT FORESTPARK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="42" width="318" height="39" uuid="9c72c542-2ae6-4a4c-bb2a-9eb8e6e6fbe1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Jl. Wisata Utama Jl. Kota Wisata No.8 Blok C1, Nagrak, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16968]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="104" width="144" height="20" uuid="196c2d86-33d1-42a7-94ad-36e3b571c286"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PRODUK]]></text>
+			</staticText>
+			<line>
+				<reportElement x="16" y="95" width="528" height="1" uuid="f769bf37-70c8-4fbd-9e77-7d0a06efe5d5"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="6d3c21a7-04dc-42d0-aa07-37697ac8c592"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="455" height="20" uuid="53422bb5-f71d-42cb-b33d-2d113e549660"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Produk]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="7af2044e-7b24-421c-be55-f43e0f2a2060"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_idProduk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="455" height="20" uuid="0062cb65-1798-43e3-ab6f-70517b3cab03"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_dataproduk_namaProduk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="263" splitType="Stretch">
+			<staticText>
+				<reportElement x="371" y="28" width="40" height="20" uuid="09931dc9-fabe-4bfb-a8ed-be073a929704"/>
+				<text><![CDATA[Cibubur,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="126" width="147" height="20" uuid="73f4487a-f259-4de0-8ce7-08e148104b89"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dian Astriana Yuniarty, S.E.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="43" width="151" height="20" uuid="e558025c-6617-4247-b11b-a0bc390663f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pimpinan Perusahaan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="225" y="227" width="100" height="20" uuid="2e09f9be-67bc-40a2-be7e-b218b0a19e4f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="411" y="28" width="143" height="20" uuid="090076fe-5100-494d-bf0f-943d55bca689"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMM yyyy", new java.util.Locale("id", "ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
